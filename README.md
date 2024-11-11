@@ -1,6 +1,7 @@
 # Подкаст «Веб-стандарты»
 
 [![Статус тестов EditorConfig](https://github.com/web-standards-ru/podcast/workflows/EditorConfig/badge.svg)](https://github.com/web-standards-ru/podcast/actions/workflows/editorconfig.yml)
+[![Статус тестов ESLint](https://github.com/web-standards-ru/podcast/workflows/ESLint/badge.svg)](https://github.com/web-standards-ru/podcast/actions/workflows/eslint.yml)
 
 Новости фронтенда в еженедельном подкасте сообщества «[Веб-стандарты](https://web-standards.ru/)»
 
@@ -32,9 +33,9 @@
 | 480     | 479     | 478     | 477     | 476     | 475     | 474     | 473     | 472     | 471     |
 | 470     | 469     | 468     | 467     | 466     | 465     | 464     | 463     | 462     | 461     |
 | 460     | 459     | 458     | 457     | 456     | 455     | 454     | 453     | 452     | 451     |
-| 450     | 449     | 448     | 447     | 446     | 445     | 444     | 443     | 442     | 441     |
-| 440     | 439     | 438     | 437     | 436     | 435     | 434     | 433     | 432     | 431     |
-| 430     | 429     | 428     | 427     | 426     | 425     | 424     | 423     | 422     | 421     |
+| 450     | 449     | [448][] | [447][] | [446][] | [445][] | [444][] | [443][] | [442][] | [441][] |
+| [440][] | [439][] | [438][] | [437][] | [436][] | [435][] | [434][] | [433][] | [432][] | [431][] |
+| [430][] | [429][] | [428][] | [427][] | [426][] | [425][] | [424][] | [423][] | [422][] | [421][] |
 | [420][] | [419][] | [418][] | [417][] | [416][] | [415][] | [414][] | [413][] | [412][] | [411][] |
 | [410][] | [409][] | [408][] | [407][] | [406][] | [405][] | 404     | [403][] | [402][] | [401][] |
 
@@ -112,6 +113,34 @@
 
 </details>
 
+[448]: src/episodes/448/index.md
+[447]: src/episodes/447/index.md
+[446]: src/episodes/446/index.md
+[445]: src/episodes/445/index.md
+[444]: src/episodes/444/index.md
+[443]: src/episodes/443/index.md
+[442]: src/episodes/442/index.md
+[441]: src/episodes/441/index.md
+[440]: src/episodes/440/index.md
+[439]: src/episodes/439/index.md
+[438]: src/episodes/438/index.md
+[437]: src/episodes/437/index.md
+[436]: src/episodes/436/index.md
+[435]: src/episodes/435/index.md
+[434]: src/episodes/434/index.md
+[433]: src/episodes/433/index.md
+[432]: src/episodes/432/index.md
+[431]: src/episodes/431/index.md
+[430]: src/episodes/430/index.md
+[429]: src/episodes/429/index.md
+[428]: src/episodes/428/index.md
+[427]: src/episodes/427/index.md
+[426]: src/episodes/426/index.md
+[425]: src/episodes/425/index.md
+[424]: src/episodes/424/index.md
+[423]: src/episodes/423/index.md
+[422]: src/episodes/422/index.md
+[421]: src/episodes/421/index.md
 [420]: src/episodes/420/index.md
 [419]: src/episodes/419/index.md
 [418]: src/episodes/418/index.md

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import yaml from 'js-yaml';
 import htmlmin from 'html-minifier-terser';
 import markdownIt from 'markdown-it';
+import { stripHeadings } from './scripts/strip-tags.js';
 import minifyXml from 'minify-xml';
 
 const markdown = markdownIt({ html: true });
@@ -18,6 +19,10 @@ export default (config) => {
 	});
 
 	config.addFilter('duration', (time) => {
+		if (typeof time === 'number') {
+			return Math.round(time / 1000);
+		}
+
 		return time.split(':').reduceRight((acc, item, index, items) => {
 			return acc += parseFloat(item) * Math.pow(60, items.length - 1 - index);
 		}, 0);
@@ -27,7 +32,7 @@ export default (config) => {
 		return markdown.renderInline(value);
 	});
 
-	config.addFilter('htmlmin', async (value) => {
+	config.addFilter('htmlmin', async value => {
 		return await htmlmin.minify(
 			value, {
 				collapseWhitespace: true,
@@ -48,11 +53,15 @@ export default (config) => {
 
 	config.ignores.add('src/template');
 
+	config.amendLibrary('md', (markdown) => {
+		markdown.use(stripHeadings);
+	});
+
 	return {
 		dir: {
 			input: 'src',
 			output: 'dist',
 			data: 'data',
-		}
+		},
 	};
 };
